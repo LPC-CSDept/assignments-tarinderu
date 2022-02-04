@@ -11,7 +11,7 @@ int main()
     miles = 4276;
     long ago = 189000;
     cout << "We have made a long journey of " << miles;
-    cout << "miles.\n";
+    cout << " miles.\n";
     cout << "Our checking account balance is. " << checking;
     cout << "\n About " << ago;
     cout << " Columbus stood on this spot.\n";
