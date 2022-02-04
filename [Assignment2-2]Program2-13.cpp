@@ -8,3 +8,4 @@ int main()
     cout << y << endl;
     return 0;
 }
+//Each code stored uses 8 bits of information, a computer system will store characters using ASCII code.
