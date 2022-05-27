@@ -4,13 +4,13 @@
 
 using namespace std;
 
-//class employee declaration
+
 class Student {
 private : 
 	int 	stuScore;
 	char 	stuName[100] ;
 public  :
-	//function to read employee details
+	
 	void readStudent(){
 		cout<<"Student DETAILS"<<endl;
 		cout<<"ENTER Students Score : " ;
@@ -20,8 +20,8 @@ public  :
 		cin.getline(stuName,100);
 
 	}
-	//function to write employee details
-	void displayEmployee(){
+	
+	void displayStudent(){
 		cout<<"Students Score: "<<stuScore<<endl
 		    <<"Students NAME: "<<stuName<<endl;
 	}
@@ -29,12 +29,12 @@ public  :
 
 int main(){
 	
-	//object of Employee class
+	
 	Student emp;
-	//read employee details
+	
 	emp.readStudent();
 	
-	//write object into the file
+	
 	fstream file;
 	file.open(FILE_NAME,ios::out|ios::binary);
 	if(!file){
@@ -46,7 +46,7 @@ int main(){
 	file.close();
 	cout<<"Date saved into file the file.\n";
 	
-	//open file again 
+	
 	file.open(FILE_NAME,ios::in|ios::binary);
 	if(!file){
 		cout<<"Error in opening file...\n";
@@ -57,7 +57,7 @@ int main(){
 			cout<<endl<<endl;
 			cout<<"Data extracted from file..\n";
 			//print the object
-			emp.displayEmployee();
+			emp.displayStudent();
 	}
 	else{
 		cout<<"Error in reading data from file...\n";
